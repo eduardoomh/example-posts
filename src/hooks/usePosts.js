@@ -7,7 +7,7 @@ export default function usePosts() {
     const {listPosts} = usePostsContext();
 
     const getPosts = () => {
-        fetch('http://jsonplaceholder.typicode.com/posts')
+        fetch('https://jsonplaceholder.typicode.com/posts')
             .then((response) => response.json())
             .then((json) => {
                 setPosts(json);
@@ -17,7 +17,7 @@ export default function usePosts() {
     }
 
     const getUsers = () =>{
-        fetch(`http://jsonplaceholder.typicode.com/users`)
+        fetch(`https://jsonplaceholder.typicode.com/users`)
         .then((response) => response.json())
         .then((json) =>{
             setUsers(json);
@@ -26,7 +26,7 @@ export default function usePosts() {
     }
 
     const getPostById = (id) =>{
-        fetch(`http://jsonplaceholder.typicode.com/posts/${id}`)
+        fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
         .then((response) => response.json())
         .then((json) =>{
             setUsers(json);
