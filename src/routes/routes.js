@@ -1,6 +1,7 @@
 import Home from "pages/home";
 import Posts from "pages/posts";
 import NewPost from "pages/newPost";
+import Post from "pages/Post";
 import ErrorComponent from "pages/error";
 import MainLayout from "components/layout/mainLayout";
 
@@ -21,6 +22,12 @@ export const rutas = [
         path: "/new-post",
         layout: MainLayout,
         component: NewPost,
+        exact: true
+    },
+    {
+        path: "/post/:id",
+        layout: MainLayout,
+        component: Post,
         exact: true
     },
     {
