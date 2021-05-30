@@ -21,13 +21,13 @@ export default function Post(props){
 
     
     const getUser = (id) =>{
-        let user = users?.find(item => item.id === id);
+        let user = users?.find(item => (item?.id)?.toString() === id?.toString());
         return user?.username;
     }
 
     useEffect(() =>{
         scroll.scrollToTop();
-        setId(parseInt(location.pathname.substring(6)));
+        setId(location.pathname.substring(6));
         getUsers();
         
         if(id){
@@ -35,7 +35,7 @@ export default function Post(props){
             setPostData(data);
         }
         
-     
+     // eslint-disable-next-line
     },[id]);
 
     return(

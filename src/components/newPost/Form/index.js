@@ -28,7 +28,7 @@ export default function Form() {
 
     useEffect(() => {
         getUsers();
-
+// eslint-disable-next-line
     }, [])
 
     return (

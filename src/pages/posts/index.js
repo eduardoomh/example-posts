@@ -25,7 +25,7 @@ export default function Posts(props){
         <Container>
             <TitleHeader path="/">
                 <motion.div animate={{ scale: 0.9 }} transition={{ ease: "easeOut" }}>
-                   <Title size="5.5rem" justify="start">ALL <br/>POSTS</Title> 
+                   <Title size="5.5rem" justify="start">ALL POSTS</Title> 
                 </motion.div>
                 <Paragraph justify="start">
                     A list for fake posts for fake people with fake information.

@@ -9,6 +9,12 @@ export const ItemContainer = styled.li`
     border: 1px solid var(--fourth);
     border-radius: 6px;
     padding-left: 1rem;
+
+    @media (min-width: 1000px){
+        max-width: 1000px;
+        margin-bottom: 2rem;
+        margin: auto;
+    }
 `;
 
 export const CreatedBy = styled.p`

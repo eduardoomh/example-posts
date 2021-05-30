@@ -35,7 +35,7 @@ export default function usePosts() {
     }
 
     const findPostById = (id) =>{
-        let result = listPosts.find(item => item.id === id);
+        let result = listPosts.find(item => (item.id)?.toString() === id);
         return result;
     }
 

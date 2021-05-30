@@ -30,6 +30,7 @@ export default function App() {
       updateListPosts
   
     }),
+    // eslint-disable-next-line
     [listPosts]);
 
   return (

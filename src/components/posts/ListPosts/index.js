@@ -27,15 +27,19 @@ export default function ListPosts(){
             }
        }
 
-       if(!listPosts?.length > 0 ){
-            getAllPosts();  
+       if(!posts?.length > 0){
+            getAllPosts(); 
+       }
+
+       if(posts?.length > 0 && listPosts?.length === 0){
             updateListPosts(posts);
        }
 
         return () => {
             console.log("finish");
         }
-    }, [listPosts]);
+        // eslint-disable-next-line
+    }, [listPosts, posts]);
 
     return(
         <div>
