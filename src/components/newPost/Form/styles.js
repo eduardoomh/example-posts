@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const FormContainer = styled.form`
+    width: 90vw;
+    margin: auto;
+
+    @media (min-width: 700px){
+        max-width: 700px;
+    }
     div{
         display: flex;
         flex-direction: column;
@@ -11,6 +17,12 @@ export const FormContainer = styled.form`
 
         input, textarea, select{
             width: 80vw;
+
+            @media (min-width: 800px){
+                min-width: 650px;
+                max-width: 650px;
+                padding: .3rem;
+            }
         }
 
         input{
@@ -22,7 +34,7 @@ export const FormContainer = styled.form`
         }
 
         textarea{
-            height: 6rem;
+            height: 5rem;
         }
 
         label{

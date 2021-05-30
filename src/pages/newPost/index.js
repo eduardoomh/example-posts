@@ -26,7 +26,7 @@ export default function NewPost(props) {
         <Container>
             <TitleHeader path="/">
                 <motion.div animate={{ scale: 0.9 }} transition={{ ease: "easeOut" }}>
-                    <Title size="5.5rem" justify="start">CREATE <br />POST</Title>
+                    <Title size="5.5rem" justify="start">CREATE POST</Title>
                 </motion.div>
                 <Paragraph justify="start">
                     You can create many post if your want.

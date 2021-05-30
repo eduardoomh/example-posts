@@ -11,7 +11,7 @@ import useDevice from "hooks/useDevice";
 import {animateScroll as scroll } from "react-scroll";
 import {DivContainer} from "./styles";
 
-export default function Home(props) {
+export default function Home() {
     const {desktop} = useDevice();
 
     useEffect(() =>{

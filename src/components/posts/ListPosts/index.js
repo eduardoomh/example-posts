@@ -4,6 +4,7 @@ import Title from "components/reusableStyles/Title";
 import Paragraph from "components/reusableStyles/Paragraph";
 import usePosts from "hooks/usePosts";
 import usePostsContext from "hooks/usePostsContext";
+import {UlStyle} from "./styles";
 
 export default function ListPosts(){
     const {getPosts, getUsers, users, posts} = usePosts();
@@ -44,7 +45,7 @@ export default function ListPosts(){
     return(
         <div>
             <Title>posts</Title>
-            <ul>
+            <UlStyle>
                 {
                     listPosts?.length > 0 ? 
                             listPosts?.map((item, index) => (
@@ -62,7 +63,7 @@ export default function ListPosts(){
                     )
            
                 }
-            </ul>
+            </UlStyle>
         </div>
     )
 }
